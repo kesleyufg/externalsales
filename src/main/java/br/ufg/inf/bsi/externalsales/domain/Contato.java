@@ -24,10 +24,12 @@ public class Contato implements Serializable {
 	public Contato() {
 	}
 	
-	public Contato(Integer id, String nome) {
+	public Contato(Integer id, String nome, String email, String telefone) {
 		super();
 		this.id = id;
 		this.nome = nome;
+		this.email = email;
+		this.telefone = telefone;
 	}
 
 	public Integer getId() {
