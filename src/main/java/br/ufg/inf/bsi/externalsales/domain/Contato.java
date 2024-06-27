@@ -1,10 +1,11 @@
 package br.ufg.inf.bsi.externalsales.domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
-
 import jakarta.persistence.Id;
-
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,6 +21,10 @@ public class Contato implements Serializable {
 	private String nome;
 	private String email;
 	private String telefone;
+	
+	@ManyToMany(mappedBy="contatos")
+	private List<Cliente> clientes = new ArrayList<Cliente>();
+	
 	
 	public Contato() {
 	}
@@ -62,6 +67,14 @@ public class Contato implements Serializable {
 
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
+	}
+
+	public List<Cliente> getContatos() {
+		return clientes;
+	}
+
+	public void setContatos(List<Cliente> clientes) {
+		this.clientes = clientes;
 	}
 
 	@Override
