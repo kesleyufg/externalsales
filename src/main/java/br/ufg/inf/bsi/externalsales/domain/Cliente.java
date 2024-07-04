@@ -4,6 +4,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
@@ -23,6 +26,7 @@ public class Cliente implements Serializable{
 	private String ie;
 	private String razaoSocial;
 	
+	@JsonBackReference
 	@ManyToMany
     @JoinTable(name="CLIENTE_CONTATO",
     joinColumns = @JoinColumn(name = "cliente_id"),
