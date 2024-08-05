@@ -1,0 +1,7 @@
+{
+  "name": "ExtenalSalesFront",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
