@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams } from '@ionic/angular';
-import { ContatoService } from '../../../services/contato.service';
+import { ContatoService } from '../../services/contato.service';
 import { ContatoDTO } from 'src/models/contato.dto';
 
 @Component({

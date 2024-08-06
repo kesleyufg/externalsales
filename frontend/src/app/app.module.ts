@@ -8,7 +8,7 @@ import { NavParams, IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { ContatosPageModule } from './pages/contatos/contatos.module';
+import { ContatosPageModule } from './contatos/contatos.module';
 import { ContatoService } from 'src/services/contato.service';
 
 @NgModule({
