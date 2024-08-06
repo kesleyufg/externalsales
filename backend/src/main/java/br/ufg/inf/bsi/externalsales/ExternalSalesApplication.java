@@ -26,7 +26,6 @@ public class ExternalSalesApplication implements CommandLineRunner{
 	}
 	@Override
 	public void run(String... args) throws Exception {
-	/*
 		Contato contato1 = new Contato(null, "Jose", "jose@email.com", "984840101");
 		Contato contato2 = new Contato(null, "Maria", "maria@email.com", "985850202");
 		Contato contato3 = new Contato(null, "Fabiana", "fabiana@email.com", "992762447");
@@ -42,6 +41,6 @@ public class ExternalSalesApplication implements CommandLineRunner{
 		cliente2.getContatos().addAll(Arrays.asList(contato3));
 		
 		contatoRepository.saveAll(Arrays.asList(contato1, contato2, contato3));
-		clienteRepository.saveAll(Arrays.asList(cliente1, cliente2));*/
+		clienteRepository.saveAll(Arrays.asList(cliente1, cliente2));
 	}
 }
