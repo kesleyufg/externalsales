@@ -15,6 +15,7 @@ import br.ufg.inf.bsi.externalsales.dto.ContatoDTO;
 import br.ufg.inf.bsi.externalsales.services.ContatoService;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:8100")
 @RequestMapping(value="/contatos")
 public class ContatoResource {
 	
